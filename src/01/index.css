@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  /* overflow: hidden; */
+  background-color: #232323;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.side-scroll__section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* はみ出た部分を隠しておく */
+}
+
+.side-scroll__itemOuter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.side-scroll__itemInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 8vw;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 2px 0 white;
+}
+
+.text1 {
+  color: #89e7e7;
+}
+.text2 {
+  margin-bottom: 30vw;
+  color: #ffc0cb;
+}
+.text3 {
+  margin-top: 30vw;
+  color: #7fffd4;
+}
